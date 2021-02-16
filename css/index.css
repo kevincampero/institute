@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend Mega', sans-serif;
+    scroll-behavior: smooth;
 }
 section{
     padding: 100px;
@@ -59,7 +60,7 @@ header{
 }
 .sticky{
     background: #fff;
-    padding: 40px 100px;
+    padding:32px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
 }
 header .logo
@@ -283,4 +284,104 @@ img{
     font-weight: 500;
     color: #2196f3;
     margin-bottom: 0;
+}
+/*responsive*/
+@media(max-width:991px)
+{
+    header,header .sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, .2);
+    }
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(../imagenes/iconos/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+
+    }
+    .active{
+        background: url(../imagenes/iconos/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+        
+    }
+    .active2{
+        left: 0;
+    }
+    .sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx{
+        margin: 10px;
+    }
+    .work .content .workBx{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonial .content .testimonialBx{
+        max-width: calc(100%-20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .testimonial .content .testimonialBx h3{
+        margin-top: 20px;
+
+    }
+    .contactInfo{
+        margin: 20px 0;
+    }
 }

@@ -11,14 +11,14 @@
 <body>
     <header>
         <a href="" class="logo">INDO</a>
-        <div class="toggle"></div>
-        <ul>
-            <li> <a href="#home">Home</a> </li>
-            <li> <a href="#nosotros">Nosotros</a> </li>
-            <li> <a href="#servicios">Servicios</a> </li>
-            <li> <a href="#personal">Personal</a> </li>
-            <li> <a href="#testimonios">Testimonios</a> </li>
-            <li> <a href="#contacto">Contacto</a> </li>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li> <a href="#home" onclick="toggleMenu();">Home</a> </li>
+            <li> <a href="#nosotros"onclick="toggleMenu();">Nosotros</a> </li>
+            <li> <a href="#servicios" onclick="toggleMenu();">Servicios</a> </li>
+            <li> <a href="#personal"onclick="toggleMenu();">Personal</a> </li>
+            <li> <a href="#testimonios"onclick="toggleMenu();">Testimonios</a> </li>
+            <li> <a href="#contacto"onclick="toggleMenu();">Contacto</a> </li>
         </ul>
     </header>
     <section class="banner" id="home">
@@ -205,6 +205,13 @@
             var header=document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY >0)
         });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active2');
+        }
     </script>
 </body>
 </html>
