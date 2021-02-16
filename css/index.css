@@ -372,7 +372,7 @@ img{
         padding: 10px;
     }
     .testimonial .content .testimonialBx{
-        max-width: calc(100%-20px);
+        max-width: 100%;
         padding: 40px 20px;
         margin: 10px;
         background: #2196f3;
