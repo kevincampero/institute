@@ -97,11 +97,14 @@ header ul li{
 header ul li a{
     position: relative;
     display: inline-block;
-    margin: 0 15px ;
+    margin: 0 5px ;
     color: white;
     text-decoration: none;
-    padding: 3px;
+    padding: 8px;
 
+}
+header ul li a span{
+    color: #2196f3;
 }
 header ul li a:hover{
     color: #0c437e;
@@ -174,7 +177,7 @@ img{
 .services .content .servicesBx:hover{
     background: #2196f3;
     color: #fff;
-    cursor: -webkit-grab;
+    cursor: pointer;
 
 }
 .services .content .servicesBx:hover img{

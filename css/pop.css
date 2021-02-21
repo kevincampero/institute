@@ -1,0 +1,63 @@
+#popup,#popup2,#popup3{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1100;
+    background: rgb(255, 255, 255);
+    width: 95%;
+    height: 95vh;
+    padding: 40px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.452);
+    transition: 0.5s;
+    visibility: hidden;
+    overflow-y: scroll;
+}
+.popup::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background: #2196f3;;
+    border-radius: 4px;
+}
+.popup::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 8px;
+}
+.popup::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+    background: #0c437e;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.popup::-webkit-scrollbar-thumb:active, body::-webkit-scrollbar-thumb:active  {
+    background-color: #ff0000;
+}
+#popup.acti,#popup2.acti,#popup3.acti{
+    visibility: visible;
+    top: 50%;
+}
+#popup .content-p,#popup2 .content-p,#popup3 .content-p{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#popup .content-p img,#popup2 .content-p img,#popup3 .content-p img{
+    max-width: 100%;
+}
+#popup .content-p h2,#popup2 .content-p h2,#popup3 .content-p h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20 px 0 10px;
+}
+#popup .content p,#popup2 .content p,#popup3 .content p{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    width: 20px;
+}

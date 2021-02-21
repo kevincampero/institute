@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/inde.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/cards.css">
-    
+    <link rel="stylesheet" href="css/pop.css">
 </head>
 
 <body>
@@ -18,12 +18,12 @@
         <a href="" class="logo">INDO</a>
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
-            <li> <a href="#home" onclick="toggleMenu();">Home</a> </li>
-            <li> <a href="#nosotros" onclick="toggleMenu();">Nosotros</a> </li>
-            <li> <a href="#servicios" onclick="toggleMenu();">Servicios</a> </li>
-            <li> <a href="#personal" onclick="toggleMenu();">Personal</a> </li>
-            <li> <a href="#testimonios" onclick="toggleMenu();">Testimonios</a> </li>
-            <li> <a href="#contacto" onclick="toggleMenu();">Contacto</a> </li>
+            <li> <a href="#" onclick="toggleMenu();"> <span>BLOG</span></a> </li>
+            <li> <a href="#nosotros" onclick="toggleMenu();">NOSOTROS</a> </li>
+            <li> <a href="#servicios" onclick="toggleMenu();">SERVICIOS</a> </li>
+            <li> <a href="#personal" onclick="toggleMenu();">PERSONAL</a> </li>
+            <li> <a href="#testimonios" onclick="toggleMenu();">TESTIMONIOS</a> </li>
+            <li> <a href="#contacto" onclick="toggleMenu();">CONTACTO</a> </li>
         </ul>
     </header>
     <section class="banner" id="home">
@@ -134,6 +134,65 @@
         </div>
     </section>
     <section class="services" id="servicios">
+        <!--POP UPS-->
+        <div class="popup" id="popup">
+            <div class="content-p">
+                <img src="imagenes/im.png" alt="">
+                <h2>Dietas</h2>
+                <p> El “bypass” gástrico es la cirugía bariátrica más realizada en la actualidad.
+                    <br>
+
+                    Realizada por primera vez en 1966, por Mason. La técnica ha sufrido varias modificaciones. Actualmente, no se realiza la gastrectomía, sino que se hace una división del estómago, dejando una pequeña porción proximal (pouch gástrico) y un estómago remanente. Luego, se hace una sección del yeyuno (intestino delgado) dividiendo el aparato digestivo en una asa bilio-pancreática (recoge jugos gástricos, bilis y jugo pancreático) y una asa alimentaria (por donde transita la comida desde el pouch gástrico al intestino delgado). Ambas asas se unen (se conectan) posteriormente, para formar un asa común donde se podrán absorber los alimentos.
+                    <br>
+                    La distancia del asa alimentaria modifica la absorción de alimentos. Por lo tanto, entre más corta sea el asa común, mayor va a ser la mala absorción de alimentos.
+                    <br>
+                    Este último punto es importante, debido a que una mala absorción implica una mayor reducción de peso.
+                    
+                    </p>
+            </div>
+            
+            <a href="#servicios" class="close" onclick="popupToggle();"><img src="imagenes/iconos/close.png" alt=""></a>
+        </div>
+        <div id="popup2"class="popup">
+            <div class="content-p">
+                <img src="imagenes/im.png" alt="">
+                <h2>Ejercicios</h2>
+                <p> El “bypass” gástrico es la cirugía bariátrica más realizada en la actualidad.
+                    <br>
+
+                    Realizada por primera vez en 1966, por Mason. La técnica ha sufrido varias modificaciones. Actualmente, no se realiza la gastrectomía, sino que se hace una división del estómago, dejando una pequeña porción proximal (pouch gástrico) y un estómago remanente. Luego, se hace una sección del yeyuno (intestino delgado) dividiendo el aparato digestivo en una asa bilio-pancreática (recoge jugos gástricos, bilis y jugo pancreático) y una asa alimentaria (por donde transita la comida desde el pouch gástrico al intestino delgado). Ambas asas se unen (se conectan) posteriormente, para formar un asa común donde se podrán absorber los alimentos.
+                    <br>
+                    La distancia del asa alimentaria modifica la absorción de alimentos. Por lo tanto, entre más corta sea el asa común, mayor va a ser la mala absorción de alimentos.
+                    <br>
+                    Este último punto es importante, debido a que una mala absorción implica una mayor reducción de peso.
+                    
+                    </p>
+            </div>
+            
+            <a href="#servicios" class="close" onclick="popupToggle2();"><img src="imagenes/iconos/close.png" alt=""></a>
+        </div>
+        <div id="popup3"class="popup">
+            <div class="content-p">
+                <img src="imagenes/im.png" alt="">
+                <h2>BYPASS GASTRICO</h2>
+                <p> El “bypass” gástrico es la cirugía bariátrica más realizada en la actualidad.
+                    <br>
+
+                    Realizada por primera vez en 1966, por Mason. La técnica ha sufrido varias modificaciones. Actualmente, no se realiza la gastrectomía, sino que se hace una división del estómago, dejando una pequeña porción proximal (pouch gástrico) y un estómago remanente. Luego, se hace una sección del yeyuno (intestino delgado) dividiendo el aparato digestivo en una asa bilio-pancreática (recoge jugos gástricos, bilis y jugo pancreático) y una asa alimentaria (por donde transita la comida desde el pouch gástrico al intestino delgado). Ambas asas se unen (se conectan) posteriormente, para formar un asa común donde se podrán absorber los alimentos.
+                    <br>
+                    La distancia del asa alimentaria modifica la absorción de alimentos. Por lo tanto, entre más corta sea el asa común, mayor va a ser la mala absorción de alimentos.
+                    <br>
+                    Este último punto es importante, debido a que una mala absorción implica una mayor reducción de peso.
+                    
+                    </p>
+            </div>
+            
+            <a href="#servicios" class="close" onclick="popupToggle3();"><img src="imagenes/iconos/close.png" alt=""></a>
+        </div>
+
+
+
+        <!--END POP UPS-->>
 
         <div class="heading white">
             <h2>
@@ -145,19 +204,19 @@
 
         </div>
         <div class="content">
-            <div class="servicesBx">
+            <div class="servicesBx" onclick="popupToggle();">
                 <img src="imagenes/iconos/005-diet.png" width="128px" height="128px" alt="">
                 <h2>PROTOCOLOS ALIMENTICIOS</h2>
                 <p>Le indicamos protocolos alimenticios a cargo de nuestros nutricionistas, realizando un seguimiento
                     especial de acuerdo al caso correspondiente.</p>
             </div>
-            <div class="servicesBx">
+            <div class="servicesBx"onclick="popupToggle2();">
                 <img src="imagenes/iconos/042-stationary bike.png" width="128px" height="128px" alt="">
                 <h2>EQUIPOS ESPECIALIZADOS</h2>
                 <p>Tenemos una variedad de equipos de entrenamiento creados especialmente para personas con sobrepeso y
                     obesidad.</p>
             </div>
-            <div class="servicesBx">
+            <div class="servicesBx"onclick="popupToggle3();">
                 <img src="imagenes/iconos/011-fat.png" width="128px" height="128px" alt="">
                 <h2>CIRUGÍAS BARIÁTRICAS</h2>
                 <p>Se realizan cirugías bariátricas, de bypass gástrico, que aseguran el logro del objetivo que se
@@ -285,7 +344,7 @@
         </div>
 
     </section>
-    <script src="js/carousel.js"></script>
+    <script src="js/pop.js"></script>
     <script src="js/nav.js" type="text/javascript"></script>
     
 </body>
