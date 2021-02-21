@@ -45,6 +45,15 @@ section{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: transparent;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    transition: .3s;
+    font-weight: 900;
+    transform: matrix(1);
 }
 header{
     position: fixed;
@@ -94,9 +103,20 @@ header ul li a{
     padding: 3px;
 
 }
+header ul li a:hover{
+    color: #0c437e;
+    background: #fff;
+    border-radius: 5px;
+
+}
 .sticky ul li a{
     color: #0c437e;
 
+}
+.sticky ul li a:hover{
+    color: #fff;
+    background: #0c437e;
+    border-radius: 5px;
 }
 .heading{
     width: 100%;

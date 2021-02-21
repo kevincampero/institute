@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.cards-doctores{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans',sans-serif;
+}
+.cards-doctores .heading h2{
+    margin-bottom: -60px;
+}
+.container-d{
+    position: relative;
+    width: 90%;
+    margin: 100px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+
+
+}
+.container-d .card-d{
+    position: relative;
+    width: 350px;
+    height: 440px;
+    background: #000;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+.container-d .card-d:hover{
+    transform: translateY(-20px);
+}
+.container-d .card-d .img-box-d{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+   
+}
+.container-d .card-d:hover .img-box-d{
+    opacity: 0.9;
+
+}
+.container-d .card-d .img-box-d img{
+    width: 100%;
+    height: 440px;
+}
+.container-d .card-d .content-d{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.container-d .card-d:hover .content-d{
+    bottom: 0;
+}
+.container-d .card-d .content-d{
+    background: linear-gradient(0deg, #444444, transparent);
+}
+.container-d .card-d .content-d h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+
+}
+.container-d .card-d .content-d h2 span{
+    
+    
+    color: #0099ff;
+    font-size: 16px;
+    
+}
+.container-d .card-d .content-d p{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.container-d .card-d .content-d ul{
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-d .card-d .content-d ul li{
+    list-style: none;
+}
+.container-d .card-d .content-d ul li a{
+    color: #0099ff;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+@media(max-width:991px)
+{
+    .container-d .card-d .content-d{
+        bottom: 0;
+    }
+    .container-d .card-d:hover{
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+
+
